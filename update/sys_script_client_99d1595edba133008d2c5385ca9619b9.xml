@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>NeedIt Placeholder with the help text; "Please enter a short description of what you need."</description>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>NeedIt Placeholder</name>
+        <order/>
+        <script><![CDATA[//Set a help text in the short description field
+function onLoad() {
+	
+	//Set the value of additional comments as a help text
+	var help= g_form.getControl('short_description');
+	
+	
+	help.placeholder = "Please enter a short description of what you need.";
+	
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-23 10:16:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>99d1595edba133008d2c5385ca9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIt Placeholder</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_99d1595edba133008d2c5385ca9619b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-23 10:16:57</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
